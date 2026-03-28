@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Сомниус</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main>
+      <section class="hero-stage" aria-label="Комиссия Сомнус">
+        <div class="hero">
+          <img class="hero__rays" src="./assets/images/hero/hero_luch_new.svg" alt="" aria-hidden="true" />
+
+          <p class="hero__intro">
+            НАДЗОРНЫЙ<br />ОРГАН,<br />РЕГУЛИРУЮЩИЙ<br />СОДЕРЖАНИЕ<br />СНОВ ГРАЖДАН
+          </p>
+
+          <a class="hero__subscribe" href="#" aria-label="Подписаться">
+            <span>ПОДПИСАТЬСЯ</span>
+          </a>
+
+          <img class="hero__logo" src="./assets/images/hero/hero_logo.svg" alt="Символ Комиссии Сомнус" />
+
+          <div class="hero__bottom" aria-hidden="true"></div>
+
+          <h1 class="hero__title hero__title--left">КОМИССИЯ</h1>
+          <h1 class="hero__title hero__title--right">СОМНУС</h1>
+
+          <p class="hero__quote hero__quote--light hero__quote--light-top">«КРАСОТА СНА —</p>
+          <p class="hero__quote hero__quote--light hero__quote--light-bottom">В ЕГО НЕОЖИДАННОСТИ,</p>
+          <p class="hero__quote hero__quote--accent hero__quote--accent-top">А ПОРЯДОК —</p>
+          <p class="hero__quote hero__quote--accent hero__quote--accent-bottom">В НАШЕМ НАДЗОРЕ»</p>
+        </div>
+      </section>
+
+      <section class="strike-stage" aria-label="Сдержи удар">
+        <div class="strike strike--state-0">
+          <h2 class="strike__title">
+            <span class="strike__title-accent">С</span><span class="strike__title-main">ДЕРЖИ УДАР</span>
+          </h2>
+
+          <img class="strike__eye" src="./assets/images/srtrike/srtrike_glaz.svg" alt="" aria-hidden="true" />
+          <img
+            class="strike__hammer"
+            src="./assets/images/srtrike/srtrike_molotok.svg"
+            alt=""
+            aria-hidden="true"
+          />
+
+          <article class="strike__card strike__card--1">
+            <div class="strike__icon-box">
+              <img class="strike__frame" src="./assets/images/srtrike/srtrike_ramka.svg" alt="" aria-hidden="true" />
+              <img class="strike__icon strike__icon--1" src="./assets/images/srtrike/srtrike_logo1.svg" alt="" aria-hidden="true" />
+            </div>
+            <div class="strike__text">
+              <h3>КОНТРОЛЬНОЕ УПРАВЛЕНИЕ</h3>
+              <p>ОБЕСПЕЧИВАЕТ ЗАКОННОСТЬ, ПОДЛИННОСТЬ И СООТВЕТСТВИЕ СНОВИДЕНИЙ НОРМАМ КОМИССИИ</p>
+            </div>
+          </article>
+
+          <article class="strike__card strike__card--2">
+            <div class="strike__icon-box">
+              <img class="strike__frame" src="./assets/images/srtrike/srtrike_ramka.svg" alt="" aria-hidden="true" />
+              <img class="strike__icon strike__icon--2" src="./assets/images/srtrike/srtrike_logo2.svg" alt="" aria-hidden="true" />
+            </div>
+            <div class="strike__text">
+              <h3>СОВЕТ ПО ЭСТЕТИКЕ</h3>
+              <p>ОЦЕНИВАЮТ ЭМОЦИОНАЛЬНУЮ И ХУДОЖЕСТВЕННУЮ ЦЕННОСТЬ СНОВ</p>
+            </div>
+          </article>
+
+          <article class="strike__card strike__card--3">
+            <div class="strike__icon-box">
+              <img class="strike__frame" src="./assets/images/srtrike/srtrike_ramka.svg" alt="" aria-hidden="true" />
+              <img class="strike__icon strike__icon--3" src="./assets/images/srtrike/srtrike_logo3.svg" alt="" aria-hidden="true" />
+            </div>
+            <div class="strike__text">
+              <h3>ЛАБОРАТОРИЯ КОРРЕКЦИЙ</h3>
+              <p>РАЗРАБАТЫВАЕТ, ТЕСТИРУЕТ И ВНЕДРЯЕТ ОБРАЗЫ В СНЫ ГРАЖДАН</p>
+            </div>
+          </article>
+
+          <button class="strike__reset" type="button" aria-label="Начать заново">
+            <img src="./assets/images/srtrike/strike_zanovo.svg" alt="" aria-hidden="true" />
+          </button>
+        </div>
+      </section>
+
+      <section class="evaluate-stage" aria-label="Оцени образ">
+        <div class="evaluate">
+          <h2 class="evaluate__title">
+            <span class="evaluate__title-accent">О</span><span class="evaluate__title-main">ЦЕНИ ОБРАЗ</span>
+          </h2>
+
+          <img class="evaluate__eye" src="./assets/images/evaluate/evaluate_glaz.svg" alt="" aria-hidden="true" />
+
+          <div class="evaluate__circles">
+            <figure class="evaluate__circle evaluate__circle--left">
+              <img id="evaluate-preview-left" src="./assets/images/evaluate/evaluate_foto4.svg" alt="" aria-hidden="true" />
+            </figure>
+
+            <figure class="evaluate__circle evaluate__circle--center">
+              <img class="evaluate__current-image" id="evaluate-current-image" src="./assets/images/evaluate/evaluate_foto1.svg" alt="Текущий образ" />
+            </figure>
+
+            <figure class="evaluate__circle evaluate__circle--right">
+              <img id="evaluate-preview-right" src="./assets/images/evaluate/evaluate_foto3.svg" alt="" aria-hidden="true" />
+            </figure>
+          </div>
+
+          <div class="evaluate__actions">
+            <button class="evaluate__action evaluate__action--reset" id="evaluate-reset" type="button" aria-label="Начать заново">
+              <img src="./assets/images/evaluate/evaluate_zanovo.svg" alt="" aria-hidden="true" />
+            </button>
+            <button class="evaluate__action evaluate__action--dislike" id="evaluate-dislike" type="button" aria-label="Дизлайк образа">
+              <img src="./assets/images/evaluate/evaluate_dislike.svg" alt="" aria-hidden="true" />
+            </button>
+            <button class="evaluate__action evaluate__action--like" id="evaluate-like" type="button" aria-label="Лайк образа">
+              <img src="./assets/images/evaluate/evaluate_like.svg" alt="" aria-hidden="true" />
+            </button>
+            <button class="evaluate__action evaluate__action--undo" id="evaluate-undo" type="button" aria-label="Отменить последнюю оценку">
+              <img src="./assets/images/evaluate/evaluate_povtor.svg" alt="" aria-hidden="true" />
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="consciousness-stage" aria-label="Новое сознание">
+        <div class="consciousness">
+          <h2 class="consciousness__title">
+            <span class="consciousness__title-accent">Н</span><span class="consciousness__title-main">ОВОЕ СОЗНАНИЕ</span>
+          </h2>
+
+          <img
+            class="consciousness__eye"
+            src="./assets/images/consciousness/consciousness_glaz.svg"
+            alt=""
+            aria-hidden="true"
+          />
+
+          <div class="consciousness__person-wrap" aria-hidden="true">
+            <img
+              class="consciousness__person"
+              src="./assets/images/consciousness/consciousness_person_new.svg"
+              alt=""
+            />
+            <img
+              class="consciousness__smile"
+              src="./assets/images/consciousness/consciousness_smile.svg"
+              alt=""
+            />
+          </div>
+          <div class="consciousness__head-dropzone" aria-hidden="true"></div>
+
+          <div class="consciousness__bubbles">
+            <img class="consciousness__bubble consciousness__bubble--l1" data-image-id="1" src="./assets/images/consciousness/consciousness_foto1.svg" alt="" aria-hidden="true" />
+            <img class="consciousness__bubble consciousness__bubble--l2" data-image-id="2" src="./assets/images/consciousness/consciousness_foto2.svg" alt="" aria-hidden="true" />
+            <img class="consciousness__bubble consciousness__bubble--l3" data-image-id="3" src="./assets/images/consciousness/consciousness_foto3.svg" alt="" aria-hidden="true" />
+            <img class="consciousness__bubble consciousness__bubble--l4" data-image-id="4" src="./assets/images/consciousness/consciousness_foto4.svg" alt="" aria-hidden="true" />
+
+            <img class="consciousness__bubble consciousness__bubble--r1" data-image-id="5" src="./assets/images/consciousness/consciousness_foto5.svg" alt="" aria-hidden="true" />
+            <img class="consciousness__bubble consciousness__bubble--r2" data-image-id="6" src="./assets/images/consciousness/consciousness_foto6.svg" alt="" aria-hidden="true" />
+            <img class="consciousness__bubble consciousness__bubble--r3" data-image-id="7" src="./assets/images/consciousness/consciousness_foto7.svg" alt="" aria-hidden="true" />
+            <img class="consciousness__bubble consciousness__bubble--r4" data-image-id="8" src="./assets/images/consciousness/consciousness_foto8.svg" alt="" aria-hidden="true" />
+          </div>
+        </div>
+      </section>
+
+      <section class="footer-stage" aria-label="Подвал проекта">
+        <div class="footer">
+          <img class="footer__frame" src="./assets/images/footer/footer_ramka.svg" alt="" aria-hidden="true" />
+
+          <p class="footer__school">NATIONAL RESEARCH UNIVERSITY HIGHER SCHOOL OF ECONOMICS</p>
+
+          <div class="footer__button footer__button--curator">
+            <img src="./assets/images/footer/footer_knopka1.svg" alt="" aria-hidden="true" />
+            <span>КУРАТОР: ЕКАТЕРИНА УМНОВА</span>
+          </div>
+
+          <div class="footer__button footer__button--group">
+            <img src="./assets/images/footer/footer_knopka2.svg" alt="" aria-hidden="true" />
+            <span>ГРУППА: БП25ДЗ12</span>
+          </div>
+
+          <div class="footer__button footer__button--author">
+            <img src="./assets/images/footer/footer_knopka3.svg" alt="" aria-hidden="true" />
+            <span>ВЕБ-ПЛАКАТ: ВАРНАВСКАЯ АННА</span>
+          </div>
+        </div>
+      </section>
+    </main>
+    <div class="subscribe-modal" id="subscribe-modal" aria-hidden="true">
+      <div class="subscribe-modal__panel" role="dialog" aria-modal="true" aria-labelledby="subscribe-title">
+        <h2 class="subscribe-modal__title" id="subscribe-title">ВВЕДИТЕ EMAIL</h2>
+        <form class="subscribe-modal__form" id="subscribe-form">
+          <label class="visually-hidden" for="subscribe-email">Email</label>
+          <input
+            class="subscribe-modal__input"
+            id="subscribe-email"
+            name="email"
+            type="email"
+            placeholder="example@mail.com"
+            required
+          />
+          <button class="subscribe-modal__submit" type="submit">ОТПРАВИТЬ</button>
+        </form>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
