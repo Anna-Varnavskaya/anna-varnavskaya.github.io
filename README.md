@@ -1,2 +1,3 @@
 # anna-varnavskaya.github.io
-test
+
+Для генерации некоторых анимаций использовался CODEX 5.3 от chat-gpt
